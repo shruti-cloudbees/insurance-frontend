@@ -8,9 +8,9 @@ pipeline {
         }
       }
       steps {
-        container('nodejs') {
+        container('maven') {
           echo 'Hello World!'   
-          sh 'node --version'
+          sh 'mvn --version'
         }
       }
     }
